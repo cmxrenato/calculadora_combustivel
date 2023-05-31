@@ -1,9 +1,8 @@
 <?php 
-      
+	if (isset($_POST['valor'])){	
       
        	$combustivel = $_POST['combustivel'];
 		$valor = $_POST['valor'];
-
 
 
 function calcular($combustivel,$valor){
@@ -25,6 +24,6 @@ if ($combustivel == "alcool"){
 
 
       echo calcular($combustivel,$valor);
-      
+	}
       
       ?> 
